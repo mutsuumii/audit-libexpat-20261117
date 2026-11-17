@@ -1,0 +1,741 @@
+{
+  "source_repo": "libexpat/libexpat",
+  "source_url": "https://github.com/libexpat/libexpat",
+  "audit_date": "2026-11-17T09:14:39.264993",
+  "scanner_version": "1.3.0",
+  "findings_count": 91,
+  "severity_breakdown": {
+    "CRITICAL": 10,
+    "HIGH": 81
+  },
+  "findings": [
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/common.c",
+      "line": 192
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/tests/common.c",
+      "line": 426
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/common.c",
+      "line": 360
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/common.c",
+      "line": 349
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/common.c",
+      "line": 378
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/common.c",
+      "line": 388
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/common.c",
+      "line": 408
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/common.c",
+      "line": 426
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 91
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 92
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 93
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 109
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 163
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 210
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/entities_tests.c",
+      "line": 216
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/entities_tests.c",
+      "line": 129
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/runtests.c",
+      "line": 123
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/fuzz/xml_lpm_fuzzer.cpp",
+      "line": 106
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/fuzz/xml_lpm_fuzzer.cpp",
+      "line": 90
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/fuzz/xml_lpm_fuzzer.cpp",
+      "line": 101
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/xmlwf/xmlfile.c",
+      "line": 160
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlfile.c",
+      "line": 203
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlfile.c",
+      "line": 265
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlfile.c",
+      "line": 160
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/handlers.c",
+      "line": 201
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/handlers.c",
+      "line": 206
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/handlers.c",
+      "line": 222
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/structdata.c",
+      "line": 115
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/tests/structdata.c",
+      "line": 134
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/structdata.c",
+      "line": 64
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/structdata.c",
+      "line": 97
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/lib/internal.h",
+      "line": 156
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/lib/internal.h",
+      "line": 154
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/lib/internal.h",
+      "line": 156
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "expat/xmlwf/xmlmime.c",
+      "line": 129
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/tests/memcheck.c",
+      "line": 131
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 71
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 122
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 126
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 139
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 140
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/memcheck.c",
+      "line": 155
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 62
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 69
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 136
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 148
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 153
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.c",
+      "line": 170
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "expat/xmlwf/ct.c",
+      "line": 124
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/examples/element_declarations.c",
+      "line": 81
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/examples/element_declarations.c",
+      "line": 68
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/minicheck.c",
+      "line": 116
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/minicheck.c",
+      "line": 130
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/minicheck.c",
+      "line": 276
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/minicheck.c",
+      "line": 60
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/minicheck.c",
+      "line": 69
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/minicheck.c",
+      "line": 100
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/minicheck.c",
+      "line": 135
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/readfilemap.c",
+      "line": 136
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/readfilemap.c",
+      "line": 142
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/readfilemap.c",
+      "line": 147
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/readfilemap.c",
+      "line": 127
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 323
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 345
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 692
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 1015
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 1050
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 1222
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/tests/misc_tests.c",
+      "line": 1223
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/misc_tests.c",
+      "line": 315
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/misc_tests.c",
+      "line": 337
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/misc_tests.c",
+      "line": 600
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 441
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 1304
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 385
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 479
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 502
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 510
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 522
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 1329
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 1397
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 358
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 441
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 491
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 880
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/xmlwf/xmlwf.c",
+      "line": 1304
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "expat/tests/memcheck.h",
+      "line": 43
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.h",
+      "line": 41
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "expat/tests/memcheck.h",
+      "line": 43
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/gennmtab/gennmtab.c",
+      "line": 434
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "expat/gennmtab/gennmtab.c",
+      "line": 437
+    }
+  ]
+}
